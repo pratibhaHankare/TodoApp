@@ -1,0 +1,6 @@
+.form{
+    display: flex;
+}
+.from input[type='text']{
+    flex:10;
+}

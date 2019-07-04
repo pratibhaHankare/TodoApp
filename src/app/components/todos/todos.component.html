@@ -1,0 +1,24 @@
+<div class="container">
+        <br/>      
+        <table class="table">
+            <tr>
+                <app-add-todos (addTodo)="addTodo($event)"></app-add-todos>
+            </tr>
+          <tr>
+            <ul class="list-inline col-md-12">
+              <li class="col-md-4"><label>Sr.No</label></li>
+              <li class="col-md-4"><label>Work List</label></li>
+              <li class="col-md-4"><label>Delete</label></li>
+            </ul>
+        </tr>
+          <hr/>
+          <tbody>
+             <app-todo-item *ngFor="let t of todos" [todo]="t"
+             (deleteTodo)="deleteTodo($event)"
+             ></app-todo-item>
+            </tbody>
+          </table>
+  </div>
+
+
+

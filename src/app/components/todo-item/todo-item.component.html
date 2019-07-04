@@ -1,0 +1,6 @@
+<ul  class="list-inline col-md-12"> 
+    <li class="col-md-4"><input (change)="onToggle(todo)" type="checkbox"></li>
+    <li [ngClass]="setClasses()"  class="col-md-4">{{todo.title}}</li>
+    <li class="col-md-4"><button (click)="onDelete(todo)" class="btn btn-danger"> <span class="glyphicon glyphicon-trash"></span></button></li>
+</ul>
+            
